@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caja de diálogo jQuery </title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-3.4.1-dist/css/bootstrap.css">
+    <script type="text/javascript" src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="dialogo.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function () {
+            var div = $('body').myPlugin();
+           /* div.createModal({
+                id_divNew: "mostrarmodal",
+                title_divNew: 'titulo',
+                style_divNew: 'display: none',
+                class_divNew: 'modal fade',
+                class_divNew2: 'modal-dialog',
+                class_divNew3: 'modal-content',
+                class_divNew4: 'modal-header',
+                button: 'x',
+                button_class: 'close',
+
+                button_data_dismiss: 'modal',
+                button_aria_label: 'close',
+                button_aria_hidden: 'true',
+
+                class_divNew5: 'modal-body',
+                class_divNew6: 'modal-footer'
+
+            })*/
+
+
+
+            /*$('div').append("<div class='modal-dialog' id='hola'></div>")
+            $('#hola').append("<div class='modal-content' id='hola2'></div>")
+            $('#hola').append("<div class='modal-header' id='hola2'></div>")
+            $('#hola').append("<div class='modal-body' id='hola2'></div>")
+            $('#hola').append("<div class='modal-footer' id='hola2'></div>")*/
+
+
+            function eliminarDiv(){
+        var eliminar=document.getElementById('mostrarmodal')
+       document.body.removeChild(eliminar)
+      }
+            $("#mostrarmodal").modal("show");
+            
+
+        })
+
+
+    </script>
+    </div>
+</body>
+
+</html>

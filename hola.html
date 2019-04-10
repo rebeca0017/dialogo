@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <title>Blog Post</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-3.4.1-dist/css/bootstrap.css">
+    <script type="text/javascript" src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="hola.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $.miPlugin({
+
+                text: {
+                    class: 'modal-title',
+                    tittle: 'MODAL',
+                    text: 'Para explicar jjjjjjjjjj cómo crear una ventana modal solo con CSS3 emplearemos la aplicación web Codepen.io que nos permite mostrar el código empleado, utilizaremos las pestañas HTML, CSS y Result, para mostar el código HTML, CSS y el resultado respectivamente En este tutorial utilizaremos propiedades CSS3 como pointer-event, transition, entre otras y la pseudo-clase target. Primero, crearemos el enlace que activará; nuestro modal, para esto en el atributo “href” colocaremos el ID del elemento DIV que contendrá nuestra ventana modal como vemos en el ejemplo'
+                },
+               
+
+            });
+
+            //$('#hola').modal('hide'); // abrir
+            $('#mostrarmodal').modal('toggle'); // cerrar
+            $('.form-group').toggle(function () {
+            }, function () {
+            });
+            
+        });
+
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

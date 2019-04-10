@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <title>Blog Post</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-3.4.1-dist/css/bootstrap.css">
+    <script type="text/javascript" src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="ejemplo.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.miPlugin({
+
+                id_divNew: 'mostrarmodal',
+                title_divNew: 'titulo',
+                style_divNew: 'display: none',
+                class_divNew: 'modal fade',
+                class_divNew2: 'modal-dialog',
+                class_divNew3: 'modal-content',
+                class_divNew4: 'modal-header',
+                h5_class: 'modal-title',
+                h5: 'titulo',
+                button: 'x',
+                button_class: 'close',
+
+                button_data_dismiss: 'true',
+                button_aria_label: 'close',
+                button_aria_hidden: 'modal',
+
+                class_divNew5: 'modal-body',
+                class_divNew6: 'modal-footer'
+
+            });
+            $("#mostrarmodal").modal("show");
+            $('.modal fade').remove()
+        });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
