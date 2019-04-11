@@ -1,24 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-3.4.1-dist/css/bootstrap.css"> 
-    <script type="text/javascript" src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
-    <script type="text/javascript" src="bootstrap/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
-    <script>
-    $(document).ready(function()
-      {
-         $("#exampleModal").modal("show");
-      });
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-3.4.1-dist/css/bootstrap.css">
+  <script type="text/javascript" src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+  <script type="text/javascript" src="bootstrap/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#exampleModal").modal("show");
+    });
+  </script>
 </head>
+
 <body>
- 
-  
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -45,4 +46,22 @@
     </div>
   </div>
 </body>
+
 </html>
+
+
+<script>
+  var divform = document.createElement('div')
+  divform.setAttribute('class', setting.formulario.div_class)
+  var label=document.createElement('label')
+  label.setAttribute('for',setting.formulario.label_for)
+  label.setAttribute('class',setting.formulario.label_class)
+  var input = document.createElement('input')
+  input.setAttribute('type', setting.formulario.input_type)
+  input.setAttribute('class', setting.formulario.input_class)
+  var label2=document.createElement('label')
+  label2.setAttribute('for',setting.formulario.label_for)
+  label2.setAttribute('class',setting.formulario.label_class)
+  var textarea = document.createElement('textarea')
+  textarea.setAttribute('class', setting.formulario.textarea_class)
+</script>
