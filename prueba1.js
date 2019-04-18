@@ -11,15 +11,14 @@ var divNew_form = document.createElement('div');
 
                 id: 'modal',
                 size: 'modal-dialog',
-                //tipo: 'modalnormal',
-                normal:'',
-                form:'',
+                normal: '',
+                form: '',
                 class: '',
                 title: '',
                 text: '',
                 showbuttons: true
-            }
 
+            }
         }
 
 
@@ -49,8 +48,6 @@ var divNew_form = document.createElement('div');
 
             var h5 = document.createElement('h5');
             divNew4.appendChild(h5);
-            //h5.append(setting.modal.title);
-            //h5.setAttribute("class", setting.modal.class);
             h5.append('titulo');
             h5.setAttribute("class", 'modal-title');
 
@@ -78,6 +75,7 @@ var divNew_form = document.createElement('div');
 
 
             if (setting.modal.showbuttons == true) {
+
                 var Save = document.createElement('button')
                 divNew6.appendChild(Save);
                 Save.append('Save changes')
@@ -97,18 +95,11 @@ var divNew_form = document.createElement('div');
             divNew3.appendChild(divNew6);
 
 
-        } 
-        
-        if(setting.modal.form==true){
+        }
 
-
-
-
-
+        if (setting.modal.form == true) {
 
             //CODIGO DE FORMULARIO
-
-
             //div principal moda fade 
 
             divNew_form.setAttribute("id", setting.modal.id);
@@ -148,7 +139,6 @@ var divNew_form = document.createElement('div');
             // quinto div modal body 
             var divNew_form5 = document.createElement('div');
             divNew_form5.setAttribute('class', 'modal-body')
-
 
             // inicio codigo del formulario
             var form = document.createElement('form')

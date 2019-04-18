@@ -17,9 +17,8 @@
 
 
                     size: 'modal-dialog',
-                    //tipo: 'modalformulario',
-                    normal: false,
-                    form: true,
+                    normal: true,
+                    form: false,
                     showbuttons: false,
                     title: 'modal',
                     text: 'Si tu aplicación web utiliza el framework Bootstap, integrar un modal popup es bastante sencillo. Bootstrap te ayuda a agregar un popup a un enlace o a un botón sin tener que utilizar código Javascript adicional. De hecho, mediante Bootstrap, puedes construir un formulario HTML con un diseño profesional en nada de tiempo.En este tutorial te mostraremos cómo integrar un formulario modal a tu sitio web utilizando Bootstrap, y a enviar dicho formulario con jQuery, Ajax y PHP. Para este ejemplo crearemos un formulario de contacto aprovechando el modal de Bootstrap y haremos submit del mismo y lo validaremos con jQuery, Ajax y PHP. Este es listado de funcionalidades que implementaremos en nuestro script para generar un formulario modal con Bootstrap.',
@@ -27,17 +26,9 @@
                     id: 'modal',
                     class: 'text-danger',
                 },
-
+                
             });
-
-
             $('#modal').modal('toggle');
-            /*$('#modalformulario').toggle(function () {
-            }, function () {
-            });
-             $('p').toggle(function () {
-             }, function () {
-             });*/
 
         });
 
