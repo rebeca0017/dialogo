@@ -1,0 +1,29 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Highlight jQuery plugin</title>
+  <script type="text/javascript" src=jquery-ui-1.12.1.custom/external/jquery/jquery.js></script>
+  <script type="text/javascript" src="plugin.js"></script>
+  <link href="bootstrap/bootstrap-3.4.1-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+    // Parametros del plugin.
+    var data = [["susana", "martinez", 18,"mena","ajshdhd",12434], ["susa", "jose", 20,18,19], ["susa", "mora", 20,"mena",20], ["susa", "morales", 20,"mena",19],["susana", "martinez", 18,"mena",20]];
+    var head = ["APELLIDOS", "NOMBRES", "EDAD","edad","jajaja",1243455];
+  $(document).ready(function() {
+    $('body').myPlugin({
+      data: data, 
+      head:head
+    });
+  });
+    
+  </script>
+</head>
+
+<body>
+  
+</body>
+
+</html>
