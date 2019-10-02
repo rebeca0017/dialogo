@@ -14,6 +14,7 @@ var divNew_form = document.createElement('div');
                 normal: '',
                 form: '',
                 class: '',
+                title1: '',
                 title: '',
                 text: '',
                 showbuttons: true
@@ -46,10 +47,10 @@ var divNew_form = document.createElement('div');
             divNew4.setAttribute('class', 'modal-header');
 
 
-            var h5 = document.createElement('h5');
-            divNew4.appendChild(h5);
-            h5.append('titulo');
-            h5.setAttribute("class", 'modal-title');
+            var h1 = document.createElement('h1');
+            divNew4.appendChild(h1);
+            h1.append(setting.modal.title1);
+            h1.setAttribute("class", 'modal-title');
 
 
             var button = document.createElement('button')
@@ -121,10 +122,10 @@ var divNew_form = document.createElement('div');
             divNew_form4.setAttribute('class', "modal-header")
 
             //titulo  del formulario 
-            var h5_form = document.createElement('h5');
-            divNew_form4.appendChild(h5_form);
-            h5_form.append(setting.modal.title);
-            h5_form.setAttribute("class", 'modal-title');
+            var h1_form = document.createElement('h1');
+            divNew_form4.appendChild(h1_form);
+            h1_form.append(setting.modal.title);
+            h1_form.setAttribute("class", 'modal-title');
 
             // boton de cerrar 'x'
             var button_form = document.createElement('button')
